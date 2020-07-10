@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Forum;
+use App\Comment;
+use Auth;
+class CommentController extends Controller
+{
+    public function addComment(Request $request,forum $forum)
+    {
+    	$this->validate($request,[
+    		'conten'=>'required'
+    	]);
+    	$comment= New Comment;
+    	$comment->user_id = Auth::user()->id;
+    	$comment->content = $request->conten;
+
+    	$forum->comments()->save($comment);
+
+    	return back();
+    }
+}
