@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('landing');
 });
 
 Auth::routes();
@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/forum' , 'ForumController');
 Route::post('/comment/addComment/{forum}','CommentController@addComment')->name('addComment');
+Route::get('logout', '\app\Http\Controllers\Auth\HomeController@logout');
