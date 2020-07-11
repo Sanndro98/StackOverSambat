@@ -21,4 +21,17 @@ class CommentController extends Controller
 
     	return back();
     }
+    public function replyComment(Request $request,Comment $comment)
+    {
+        $this->validate($request,[
+            'conten2'=>'required'
+        ]);
+        $reply= New Comment;
+        $reply->user_id = Auth::user()->id;
+        $reply->content = $request->conten2;
+
+        $comment->comments()->save($reply);
+
+        return back();
+    }
 }

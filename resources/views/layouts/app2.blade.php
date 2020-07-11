@@ -13,15 +13,15 @@
   <title>{{ config('app.name', 'Laravel') }}</title>
 
   <!-- Custom fonts for this template-->
-  <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{asset('/sbadmin2/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <!-- Custom styles for this template-->
-  <link href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
+  <link href="{{asset('/sbadmin2/css/sb-admin-2.min.css')}}" rel="stylesheet">
   <!-- Fonts -->
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <!-- Styles -->
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">  
+  <link href="{{ asset('/sbadmin2/css/app.css') }}" rel="stylesheet">  
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 
@@ -30,7 +30,7 @@
 
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
     <div class="container">
-        <a href="http://127.0.0.1:8000" class="navbar-brand">
+        <a href="/forum" class="navbar-brand">
         StackOverSambat
         </a>
     </div>
@@ -56,7 +56,7 @@
 
 <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('/sbadmin2/js/app.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 @yield('js')
 <script src="{{asset('ckeditor/ckeditor.js')}}"></script>

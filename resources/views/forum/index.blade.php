@@ -16,7 +16,7 @@
         <div class="card">
           <div class="card-header">
             <div class=" media flex-wrap w-100 align-items-center justify-content-between">
-            <a class="{{route('forum.show' , $a->id)}}">{{$a->title}}</a>
+            <a class="{{route('forum.show' , $a->id)}}">Topic: {{$a->title}}</a>
             <div class="float-right ml-5">
               <form class="form-inline" action="{{route('forum.destroy' ,$a->id)}}" method="post">
                 <a class="btn btn-outline-primary mr-sm-2 btn-sm" type="submit" href="{{route('forum.show' , $a->id)}}">Lihat Detail</a>

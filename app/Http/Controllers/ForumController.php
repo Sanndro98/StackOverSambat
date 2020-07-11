@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Illuminate\Support\Str;
 
+
 class ForumController extends Controller
 {
     public function __construct()

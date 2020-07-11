@@ -20,6 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('logout', 'HomeController@logout');
 Route::resource('/forum' , 'ForumController');
+Route::resource('/tag' , 'TagController');
 Route::post('/comment/addComment/{forum}','CommentController@addComment')->name('addComment');
-Route::get('logout', '\app\Http\Controllers\Auth\HomeController@logout');
+Route::post('/comment/replyComment/{comment}','CommentController@replyComment')->name('replyComment');
+
+Route::get('/home/{user}','ProfileController@index')->name('profile');
+Route::post('/forum/mark-as-solution' ,'ForumController@markAsSolution')->name('markAsSolution');
