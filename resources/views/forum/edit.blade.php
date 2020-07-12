@@ -33,8 +33,9 @@
                         @if($errors->has('descriptio'))
                           <span class="help-block">{{$errors->first('description')}}</span>
                         @endif
-                   		</div>
-                   		<button type="submit" class="btn btn-primary">Submit</button>
+                       </div>
+                      <a href="/forum" class="btn btn-success"><span class="fas fa-fw fa-chevron-left"></span>Back</a>
+                   		<button type="submit" class="btn btn-primary"><span class="mr-1 fas fa-fw fa-check"></span>Submit</button>
                    </form>
                 </div>
             </div>

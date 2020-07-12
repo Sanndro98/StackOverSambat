@@ -5,10 +5,11 @@
     <div class="card">
       <div class="card-header">
         <div class="navbar navbar-light bg-light justify-content-between">
-          <a class="navbar-brand">Tags</a>
+          <a class="navbar-brand font-weight-bold text-primary">Tags</a>
           <form class="form-inline">
-            <a class="btn btn-outline-primary mr-sm-2" type="submit" href="{{route('tag.create')}}">Tambah Tag</a>
+            <a class="btn btn-outline-primary mr-sm-2" type="submit" href="{{route('tag.create')}}"><span class="fas fa-fw fa-plus"></span>Tambah Tag</a>
           </form>
+          <p class="mt-2 font-weight-light text-muted">A tag is a keyword or label that categorizes your question with other, similar questions. Using the right tags makes it easier for others to find and answer your question.</p>
         </div>
       </div>
       <div class="card-body">
