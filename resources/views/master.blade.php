@@ -57,6 +57,11 @@
           <i class="fas fa-fw fa-tags"></i>
           <span>Tags</span></a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about-us">
+          <i class="fa fa-users" aria-hidden="true"></i>
+          <span>About Us</span></a>
+      </li>
 
     </ul>
     <!-- End of Sidebar -->

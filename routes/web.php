@@ -28,3 +28,4 @@ Route::post('/comment/replyComment/{comment}','CommentController@replyComment')-
 
 Route::get('/home/{user}','ProfileController@index')->name('profile');
 Route::post('/forum/mark-as-solution' ,'ForumController@markAsSolution')->name('markAsSolution');
+Route::get('/about-us','ForumController@about')->name('about');

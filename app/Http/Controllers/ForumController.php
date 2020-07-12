@@ -124,4 +124,9 @@ class ForumController extends Controller
         $forum->delete();
         return redirect()->route('forum.index');
     }
+
+    public function about()
+    {
+        return view('about');
+    }
 }

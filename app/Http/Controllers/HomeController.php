@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Auth;
+use App\Forum;
+use App\Tag;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,7 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $forum= Forum::all();
+        $tag = Tag::all();
+        return view('home',compact('forum','tag'));
     }
 
     public function logout(Request $request) {
