@@ -93,8 +93,9 @@
 
                   <!-- Project Card Example -->
                   <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                      <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">All Tags</h6>
+                      <a class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm" href="{{route('tag.create')}}" type="submit"><i class="fas fa-fw fa-tags"></i> Create Tag</a>
                     </div>
                     <div class="card-body">
                           <div class="list-group">
