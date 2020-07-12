@@ -24,11 +24,11 @@ class CommentController extends Controller
     public function replyComment(Request $request,Comment $comment)
     {
         $this->validate($request,[
-            'conten2'=>'required'
+            'name'=>'required'
         ]);
         $reply= New Comment;
         $reply->user_id = Auth::user()->id;
-        $reply->content = $request->conten2;
+        $reply->content = $request->name;
 
         $comment->comments()->save($reply);
 

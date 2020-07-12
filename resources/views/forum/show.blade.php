@@ -104,10 +104,10 @@
                                      <div class="card card-body">
                                          <form action="{{route('replyComment',$c->id)}}" method="post">
                                              {{csrf_field()}}
-                                             <div class="form-group {{$errors->has('content')?'has-error':''}}">
-                                                 <textarea class="form-control"></textarea>
-                                                 @if($errors->has('conten2'))
-                                                     <span class="help-block">{{$errors->first('conten2')}}</span>
+                                             <div class="form-group {{$errors->has('name')?'has-error':''}}">
+                                                 <textarea class="form-control" name="name"></textarea>
+                                                 @if($errors->has('name'))
+                                                     <span class="help-block">{{$errors->first('name')}}</span>
                                                  @endif
                                              </div>
                                              <button type="submit" class="btn btn-primary">Submit</button>

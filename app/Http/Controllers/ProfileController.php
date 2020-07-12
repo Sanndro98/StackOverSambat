@@ -13,6 +13,6 @@ class ProfileController extends Controller
     {
     	$tag = Tag::all();
     	$forum = Forum::where('user_id',$user->id)->get();
-    	return view('home',compact('user','forum','tag'));
+    	return view('profile',compact('user','forum','tag'));
     }
 }
